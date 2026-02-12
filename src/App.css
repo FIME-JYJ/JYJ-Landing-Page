@@ -179,3 +179,129 @@ body {
   padding: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
+
+/* ================= SERVICIOS ================= */
+
+.services-section {
+  background: linear-gradient(135deg, #012a4a 0%, #013a63 100%);
+  padding: 80px 60px;
+  color: white;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #90e0ef;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #0284c7;
+  box-shadow: 0 15px 35px rgba(2, 132, 199, 0.3);
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #90e0ef;
+  letter-spacing: 0.5px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  color: #e0f2fe;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 30px;
+  }
+
+  .services-title {
+    font-size: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #0284c7;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  color: #90e0ef;
+  transform: scale(1.1);
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list li {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  color: #e0f2fe;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.service-list li:hover {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+.list-icon {
+  color: #0284c7;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.list-text {
+  flex: 1;
+}

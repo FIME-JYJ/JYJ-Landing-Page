@@ -1,6 +1,13 @@
 import portada from "../img/portadalanding.jpeg";
 
 function Hero() {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
      <section
   className="hero"
@@ -26,7 +33,7 @@ function Hero() {
           </p>
 
           <div className="hero-buttons">
-            <button className="btn-primary">Nuestros Servicios</button>
+            <button className="btn-primary" onClick={() => scrollToSection('servicios')}>Nuestros Servicios</button>
             <button className="btn-outline">Contáctanos</button>
           </div>
         </div>
