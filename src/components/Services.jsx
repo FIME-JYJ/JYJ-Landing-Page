@@ -2,6 +2,8 @@ import { FaBuilding, FaCog, FaIndustry, FaBolt, FaTools } from 'react-icons/fa';
 import { MdSecurity, MdWaterDrop, MdLocalFireDepartment } from 'react-icons/md';
 import { GiSecurityGate, GiPaintBrush } from 'react-icons/gi';
 import { BsDropletFill } from 'react-icons/bs';
+import remodelacionImg from "../img/remodelacion.jpeg";
+
 
 function Services() {
   const services = [
@@ -10,7 +12,8 @@ function Services() {
       title: "REMODELACIÓN ARQUITECTÓNICA",
       description: "Diseño y ejecución de proyectos de locales comerciales.",
       category: "arquitectura",
-      icon: <FaBuilding />
+      icon: <FaBuilding />,
+      image: remodelacionImg,
     },
     {
       id: 2,
@@ -58,6 +61,14 @@ function Services() {
         <div className="services-grid">
           {services.map((service) => (
             <div key={service.id} className="service-card">
+              {service.image && (
+                <img 
+                  src={service.image} 
+                  alt={service.title} 
+                  className="service-image"
+                />
+              )}
+              
               <div className="service-icon">{service.icon}</div>
               <h3>{service.title}</h3>
               {service.isList ? (
