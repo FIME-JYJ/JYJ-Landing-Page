@@ -345,3 +345,36 @@ body {
   margin-left: 30px; 
 }
 
+/* texto de mas informacion y su flecha */
+.service-more {
+  margin-top: 22px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3a86ff; /* color (azul claro) */
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+/* brillos */
+.service-more:hover {
+  color: #5aa3ff;
+  text-shadow: 0 0 12px rgba(90, 163, 255, 0.6);
+}
+
+/* la flecha p */
+.arrow {
+  display: inline-block;
+  font-size: 16px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+/* animacion para la felcha */
+.service-more:hover .arrow {
+  transform: translateX(8px);
+  opacity: 1;
+}

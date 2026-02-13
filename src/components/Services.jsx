@@ -4,8 +4,8 @@ import { GiSecurityGate, GiPaintBrush } from 'react-icons/gi';
 import { BsDropletFill } from 'react-icons/bs';
 import remodelacionImg from "../img/remodelacion.jpeg";
 
-
 function Services() {
+
   const services = [
     {
       id: 1,
@@ -18,21 +18,21 @@ function Services() {
     {
       id: 2,
       title: "MECÁNICA ELECTROMECÁNICA",
-      description: "Instalación, mantenimiento y reparación de equipos de todo taller (hidráulicos, neumáticos y de bombeo).",
+      description: "Instalación, mantenimiento y reparación de equipos hidráulicos, neumáticos y de bombeo.",
       category: "mecanica",
       icon: <FaCog />
     },
     {
       id: 3,
       title: "ESTRUCTURAS METÁLICAS",
-      description: "Instalación, mantenimiento y fabricación de techos estructurados, mesamines entre otros.",
+      description: "Instalación, mantenimiento y fabricación de techos estructurados y mezzanines.",
       category: "estructuras",
       icon: <FaIndustry />
     },
     {
       id: 4,
       title: "INSTALACIONES ELÉCTRICAS",
-      description: "Instalación de circuitos de tendidos eléctricos de baja y media tensión. Instalación de pozos a tierra, instalación de tableros eléctricos, instalación de luminarias, mantenimiento de subestaciones entre otros.",
+      description: "Instalación de circuitos eléctricos de baja y media tensión, pozos a tierra, tableros eléctricos, luminarias y mantenimiento de subestaciones.",
       category: "electricas",
       icon: <FaBolt />
     },
@@ -61,16 +61,26 @@ function Services() {
         <div className="services-grid">
           {services.map((service) => (
             <div key={service.id} className="service-card">
+
+              {/* Imagen si existe */}
               {service.image && (
-                <img 
-                  src={service.image} 
-                  alt={service.title} 
-                  className="service-image"
-                />
+                <div className="service-image-container">
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="service-image"
+                  />
+                </div>
               )}
-              
-              <div className="service-icon">{service.icon}</div>
+
+              {/* Icono */}
+              <div className="service-icon">
+                {service.icon}
+              </div>
+
               <h3>{service.title}</h3>
+
+              {/* Descripción o Lista */}
               {service.isList ? (
                 <ul className="service-list">
                   {service.description.map((item, index) => (
@@ -83,6 +93,12 @@ function Services() {
               ) : (
                 <p>{service.description}</p>
               )}
+
+              {/* MÁS INFORMACIÓN */}
+              <div className="service-more">
+                Más información <span className="arrow">→</span>
+              </div>
+
             </div>
           ))}
         </div>
