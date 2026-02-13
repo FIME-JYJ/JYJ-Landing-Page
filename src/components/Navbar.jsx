@@ -1,4 +1,7 @@
+import logo from "../img/logojyj.png";
+
 function Navbar() {
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -8,10 +11,17 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">J&J SERVICIOS</div>
+      
+      {/* LOGO + TEXTO */}
+      <div className="logo-container">
+        <img src={logo} alt="J&J Logo" className="logo-img" />
+        <span className="logo-text">J&J SERVICIOS</span>
+      </div>
 
       <ul className="nav-links">
-        <li onClick={() => scrollToSection('servicios')} style={{ cursor: 'pointer' }}>Servicios</li>
+        <li onClick={() => scrollToSection('servicios')} style={{ cursor: 'pointer' }}>
+          Servicios
+        </li>
         <li>Proyectos</li>
         <li>Clientes</li>
         <li>Contacto</li>

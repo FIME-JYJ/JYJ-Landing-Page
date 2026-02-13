@@ -323,3 +323,25 @@ body {
 .list-text {
   flex: 1;
 }
+/* Contendedor de logo jhyj*/
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Logo JyJ*/
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* texto del lgo JYJ */
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin-left: 30px; 
+}
+
