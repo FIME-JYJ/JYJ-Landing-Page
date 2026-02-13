@@ -1,4 +1,4 @@
-import portada from "../img/portadalanding.jpeg";
+import portada from "../img/portadalanding.webp";
 
 function Hero() {
   const scrollToSection = (sectionId) => {
@@ -20,10 +20,8 @@ function Hero() {
       <div className="hero-container">
         <div className="hero-content">
           <h1>
-            Soluciones Integrales en
-            <br />
-            Ingeniería, Construcción y
-            <br />
+            <span className="no-wrap">Soluciones Integrales en</span> <br />
+            Ingeniería, Construcción y <br />
             Mantenimiento
           </h1>
 
