@@ -62,7 +62,7 @@ function Services() {
           {services.map((service) => (
             <div key={service.id} className="service-card">
 
-              {/* Imagen si existe */}
+              {/*imagen  */}
               {service.image && (
                 <div className="service-image-container">
                   <img 
@@ -80,7 +80,7 @@ function Services() {
 
               <h3>{service.title}</h3>
 
-              {/* Descripción o Lista */}
+              {/* Descripción */}
               {service.isList ? (
                 <ul className="service-list">
                   {service.description.map((item, index) => (
@@ -94,7 +94,7 @@ function Services() {
                 <p>{service.description}</p>
               )}
 
-              {/* MÁS INFORMACIÓN */}
+              {/* Texto de mas info */}
               <div className="service-more">
                 Más información <span className="arrow">→</span>
               </div>
