@@ -32,7 +32,7 @@ function Hero() {
 
           <div className="hero-buttons">
             <button className="btn-primary" onClick={() => scrollToSection('servicios')}>Nuestros Servicios</button>
-            <button className="btn-outline">Contáctanos</button>
+            <button className="btn-outline" onClick={() => scrollToSection('contacto')}>Contáctanos</button>
           </div>
         </div>
       </div>

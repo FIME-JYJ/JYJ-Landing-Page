@@ -24,7 +24,9 @@ function Navbar() {
         </li>
         <li>Proyectos</li>
         <li>Clientes</li>
-        <li>Contacto</li>
+        <li onClick={() => scrollToSection('contacto')} style={{ cursor: 'pointer' }}>
+          Contacto
+        </li>
       </ul>
 
       <button className="btn-nav">Llámanos</button>

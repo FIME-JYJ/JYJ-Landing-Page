@@ -378,3 +378,217 @@ body {
   transform: translateX(8px);
   opacity: 1;
 }
+
+
+/* ================= CONTACTO ================= */
+
+.contact-section {
+  background: linear-gradient(135deg, #013a63 0%, #01497c 100%);
+  padding: 80px 60px;
+  color: white;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #90e0ef;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Columna Izquierda - Info de Contacto */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-block {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-block:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #0284c7;
+  box-shadow: 0 12px 30px rgba(2, 132, 199, 0.3);
+  transform: translateY(-3px);
+}
+
+.contact-icon-large {
+  font-size: 2.2rem;
+  color: #0284c7;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  background: rgba(2, 132, 199, 0.15);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.contact-block:hover .contact-icon-large {
+  color: #90e0ef;
+  background: rgba(144, 224, 239, 0.2);
+  transform: scale(1.05);
+}
+
+.contact-details {
+  flex: 1;
+}
+
+.contact-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #90e0ef;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-value {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #e0f2fe;
+  margin: 3px 0;
+  font-weight: 500;
+}
+
+/* Columna Derecha - Redes Sociales */
+.contact-social-column {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+.social-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #90e0ef;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.social-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.social-card:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #0284c7;
+  box-shadow: 0 8px 20px rgba(2, 132, 199, 0.3);
+}
+
+.social-icon {
+  font-size: 1.8rem;
+  color: #0284c7;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.social-card:hover .social-icon {
+  color: #90e0ef;
+  transform: scale(1.1);
+}
+
+.social-card span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  opacity: 0.95;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 30px;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .contact-block {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .contact-icon-large {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+  }
+
+  .contact-value {
+    font-size: 1rem;
+  }
+
+  .social-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .social-icon {
+    font-size: 1.6rem;
+  }
+
+  .social-card span {
+    font-size: 0.9rem;
+  }
+}
