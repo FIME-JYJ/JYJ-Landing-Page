@@ -1,18 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 import logo from "../img/logojyj.png";
 
-function Navbar() {
+function NavbarProjects() {
   const navigate = useNavigate();
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const goToProjects = () => {
-    navigate('/projects');
+  const goToSection = (sectionId) => {
+    navigate('/', { state: { scrollTo: sectionId } });
   };
 
   return (
@@ -25,21 +18,21 @@ function Navbar() {
       </div>
 
       <ul className="nav-links">
-        <li onClick={() => scrollToSection('servicios')} style={{ cursor: 'pointer' }}>
+        <li onClick={() => goToSection('servicios')} style={{ cursor: 'pointer' }}>
           Servicios
         </li>
-        <li onClick={goToProjects} style={{ cursor: 'pointer' }}>
+        <li onClick={() => navigate('/projects')} style={{ cursor: 'pointer' }}>
           Proyectos
         </li>
         <li>Clientes</li>
-        <li onClick={() => scrollToSection('contacto')} style={{ cursor: 'pointer' }}>
+        <li onClick={() => goToSection('contacto')} style={{ cursor: 'pointer' }}>
           Contacto
         </li>
       </ul>
 
-      <button className="btn-nav">Llámanos</button>
+      <button className="btn-nav" onClick={() => goToSection('contacto')}>Llámanos</button>
     </nav>
   );
 }
 
-export default Navbar;
+export default NavbarProjects;

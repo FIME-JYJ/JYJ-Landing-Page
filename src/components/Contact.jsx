@@ -1,4 +1,4 @@
-import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaFacebook, FaLinkedin, FaGlobe } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaFacebook, FaLinkedin } from 'react-icons/fa';
 import { motion } from "framer-motion";
 
 function Contact() {
@@ -106,7 +106,7 @@ function Contact() {
             <h3 className="social-title">Síguenos</h3>
             
             <motion.a 
-              href="https://facebook.com" 
+              href="https://www.facebook.com/JyJSAC/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="social-card"
@@ -118,7 +118,7 @@ function Contact() {
             </motion.a>
 
             <motion.a 
-              href="https://linkedin.com" 
+              href="https://pe.linkedin.com/company/servicioseimportacionesjyjsac" 
               target="_blank" 
               rel="noopener noreferrer"
               className="social-card"
@@ -129,17 +129,6 @@ function Contact() {
               <span>SERVICIOS GENERALES J&J S.A.C.</span>
             </motion.a>
 
-            <motion.a 
-              href="https://jyjsac.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="social-card"
-              whileHover={{ scale: 1.03, y: -5 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <FaGlobe className="social-icon" />
-              <span>www.jyjsac.com</span>
-            </motion.a>
           </motion.div>
         </motion.div>
       </div>
