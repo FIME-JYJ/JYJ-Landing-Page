@@ -5,6 +5,11 @@ import { BsDropletFill } from 'react-icons/bs';
 import { motion } from "framer-motion";
 import remodelacionImg from "../img/remodelacion.jpeg";
 import remodelacionImg2 from "../img/Remodelacion2.jpeg";
+import remodelacionImg3 from "../img/Remodelacion3.jpeg";
+import remodelacionImg4 from "../img/Remodelacion4.jpeg";
+import remodelacionImg5 from "../img/Remodelacion5.jpeg";
+
+
 
 function Services() {
     const services = [
@@ -30,7 +35,7 @@ function Services() {
             description: "Instalación, mantenimiento y fabricación de techos estructurados y mezzanines.",
             category: "estructuras",
             icon: <FaIndustry />,
-            image: remodelacionImg,
+            image: remodelacionImg3,
         },
         {
             id: 4,
@@ -38,7 +43,7 @@ function Services() {
             description: "Instalación de circuitos eléctricos de baja y media tensión, pozos a tierra, tableros eléctricos, luminarias y mantenimiento de subestaciones.",
             category: "electricas",
             icon: <FaBolt />,
-            image: remodelacionImg,
+            image: remodelacionImg4,
         },
         {
             id: 5,
@@ -54,7 +59,7 @@ function Services() {
             category: "generales",
             isList: true,
             icon: <FaTools />,
-            image: remodelacionImg,
+            image: remodelacionImg5,
         }
     ];
 
