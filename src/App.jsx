@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import NavbarClientes from "./components/NavbarClientes";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -26,6 +27,7 @@ function HomePage() {
     <>
       <Navbar />
       <Hero />
+      <NavbarClientes />
       <Services />
       <Contact />
       <Footer />
