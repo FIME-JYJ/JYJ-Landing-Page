@@ -1,11 +1,12 @@
 import React from "react";
 
-// Importa los logos desde la carpeta img/logos
+
 import lineaLogo from "../img/logos/Linealogo.png";
 import logMcolibri from "../img/logos/LogMcolibri.png";
-import maerskLogo from "../img/logos/Maersk_Group_Logo.svg.png"; // ajusta el nombre exacto del archivo
-import mariaMercedes from "../img/logos/maria-mercedes.png"; // ajusta el nombre exacto
-import swissportLogo from "../img/logos/Swissport-Logo.png"; // ajusta el nombre exacto
+import maerskLogo from "../img/logos/Maersk_Group_Logo.svg.png";
+import mariaMercedes from "../img/logos/maria-mercedes.png"; 
+import swissportLogo from "../img/logos/Swissport-Logo.png"; 
+import universalLogo from "../img/logos/logouniversal.webp"; 
 
 const logos = [
   { src: lineaLogo, alt: "Linea Logo" },
@@ -13,10 +14,13 @@ const logos = [
   { src: maerskLogo, alt: "Maersk Group" },
   { src: mariaMercedes, alt: "Maria Mercedes" },
   { src: swissportLogo, alt: "Swissport" },
+  { src: universalLogo, alt: "Universal" },
 ];
 
 const NavbarClientes = () => {
-  // Duplicamos los logos para lograr el efecto infinito
+  
+  // codigo para duplicar imagenes que sirven para el carrusel
+
   const duplicated = [...logos, ...logos];
 
   return (
